@@ -9,7 +9,7 @@ import {
   deleteProduct,
 } from "../controllers/product.controller.js";
 
-import upload from "../middleware/upload.js";
+import upload from "../middlewares/upload.js";
 import { protectAdmin } from "../middlewares/admin.middleware.js";
 
 const router = express.Router();
