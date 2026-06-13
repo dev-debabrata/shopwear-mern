@@ -278,7 +278,8 @@ const CollectionsPage = () => {
               {filteredProducts.map((product) => (
                 <Link to={`/products/${product._id}`} key={product._id}>
                   {/* <div className="flex flex-col cursor-pointer overflow-hidden"> */}
-                  <div className="relative flex flex-col cursor-pointer overflow-hidden">
+                  <div className=" overflow-hidden">
+                    {/* relative flex flex-col cursor-pointer */}
                     <button
                       onClick={(e) => handleWishlist(e, product)}
                       className="absolute top-3 right-3 z-10 bg-white rounded-full p-2 shadow-md"
