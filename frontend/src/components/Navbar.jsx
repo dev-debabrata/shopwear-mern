@@ -251,7 +251,7 @@ const Navbar = () => {
               to="/signup?mode=login"
               className="border border-black text-[12px] px-2 py-1 md:text-base md:px-4 md:py-2 text-black hover:bg-black hover:text-white transition-all duration-300"
             >
-              Sign In
+              Login
             </Link>
           )}
 

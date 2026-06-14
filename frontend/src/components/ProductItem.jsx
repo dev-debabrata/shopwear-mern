@@ -23,7 +23,7 @@ const ProductItem = ({
             onClick={() => window.scrollTo(0, 0)}
             className="relative block text-gray-700 cursor-pointer"
         >
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden ">
                 {showWishlist && (
                     <button
                         type="button"
@@ -42,7 +42,7 @@ const ProductItem = ({
                 <img
                     src={productImage || "/images/placeholder.png"}
                     alt={name}
-                    className="w-full hover:scale-110 transition ease-in-out duration-300"
+                    className="w-full h-[250px] md:h-[300px] object-cover hover:scale-110 transition duration-300"
                 />
             </div>
 

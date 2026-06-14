@@ -16,7 +16,8 @@ const LatestCollections = () => {
     return (
         <section className="my-10">
             <div className="py-8 text-center text-3xl">
-                <Title text1="LATEST" text2="COLLECTIONS" />
+                <Title text1="NEW" text2="ARRIVALS" />
+                {/* <Title text1="LATEST" text2="COLLECTIONS" /> */}
 
                 <p className="w-3/4 mx-auto mt-2 text-xs text-gray-600 sm:text-sm md:text-base">
                     ShopWear offers the latest trendy and high-quality fashion
@@ -26,20 +27,18 @@ const LatestCollections = () => {
 
 
             {loading ? (
-                <div className="flex-1">
-                    <Loading text="Loading product..." />
+                <div className="flex items-center justify-center min-h-[30vh]">
+                    <Loading text="Loading products..." />
+                </div>
+            ) : latestProducts.length === 0 ? (
+                <div className="flex items-center justify-center min-h-[20vh]">
+                    <p className="text-center text-gray-500">No products found.</p>
                 </div>
             ) : (
+
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6">
                     {latestProducts.map((product) => (
                         <ProductItem key={product._id} {...product} />
-                        // <ProductItem
-                        //     key={product._id}
-                        //     _id={product._id}
-                        //     image={product.image}
-                        //     name={product.name}
-                        //     price={product.price}
-                        // />
                     ))}
                 </div>
             )}

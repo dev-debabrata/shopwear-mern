@@ -269,7 +269,7 @@ const SignUpPage = () => {
             className="mt-4 font-light"
             type="primary"
           >
-            Sign In
+            Login
           </Button>
         </form>
       )}

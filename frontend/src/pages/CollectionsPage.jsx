@@ -13,8 +13,8 @@ import ProductItem from "../components/ProductItem";
 import { Search, X } from "lucide-react";
 
 const CollectionsPage = () => {
-  const [products, setProducts] = useState([]);
-  const [pageLoading, setPageLoading] = useState(false);
+  // const [products, setProducts] = useState([]);
+  // const [pageLoading, setPageLoading] = useState(false);
   const [sortValue, setSortValue] = useState("name-asc");
   const [searchInput, setSearchInput] = useState("");
   const [showFilter, setShowFilter] = useState(false);
@@ -22,8 +22,17 @@ const CollectionsPage = () => {
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
 
-  const { isSearchBarOpen, setIsSearchBarOpen, addToWishlist, isInWishlist } =
-    useAppContext();
+  const {
+    products,
+    loading,
+    isSearchBarOpen,
+    setIsSearchBarOpen,
+    addToWishlist,
+    isInWishlist,
+  } = useAppContext();
+
+  // const { isSearchBarOpen, setIsSearchBarOpen, addToWishlist, isInWishlist } =
+  //   useAppContext();
 
   const [checkedBox, setCheckedBox] = useState({
     Men: false,
@@ -34,29 +43,29 @@ const CollectionsPage = () => {
     Winterwear: false,
   });
 
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        setPageLoading(true);
+  // useEffect(() => {
+  //   const fetchProducts = async () => {
+  //     try {
+  //       setPageLoading(true);
 
-        const res = await axiosInstance.get("/products");
+  //       const res = await axiosInstance.get("/products");
 
-        const productList = Array.isArray(res.data)
-          ? res.data
-          : Array.isArray(res.data.products)
-            ? res.data.products
-            : [];
+  //       const productList = Array.isArray(res.data)
+  //         ? res.data
+  //         : Array.isArray(res.data.products)
+  //           ? res.data.products
+  //           : [];
 
-        setProducts(productList);
-      } catch (err) {
-        console.error(err);
-      } finally {
-        setPageLoading(false);
-      }
-    };
+  //       setProducts(productList);
+  //     } catch (err) {
+  //       console.error(err);
+  //     } finally {
+  //       setPageLoading(false);
+  //     }
+  //   };
 
-    fetchProducts();
-  }, []);
+  //   fetchProducts();
+  // }, []);
 
 
   useEffect(() => {
@@ -345,7 +354,10 @@ const CollectionsPage = () => {
             </select>
           </div>
 
-          {pageLoading ? (
+          {/* {pageLoading ? (
+            <Loading text="Loading collections..." />
+          ) : filteredProducts.length === 0 ? ( */}
+          {loading ? (
             <Loading text="Loading collections..." />
           ) : filteredProducts.length === 0 ? (
             <div className="flex min-h-[50vh] items-center justify-center">

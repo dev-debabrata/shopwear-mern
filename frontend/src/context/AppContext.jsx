@@ -28,25 +28,51 @@ export const AppProvider = ({ children }) => {
     setIsAuthReady(true);
   }, []);
 
+
+  const fetchProducts = async (showLoader = true) => {
+    if (showLoader) setLoading(true);
+
+    try {
+      const res = await axiosInstance.get("/products");
+
+      const productList = res.data.products || res.data.data || res.data;
+
+      setProducts(Array.isArray(productList) ? productList : []);
+    } catch (err) {
+      console.error(err);
+    } finally {
+      if (showLoader) setLoading(false);
+    }
+  };
+
   useEffect(() => {
-    const fetchedProducts = async () => {
-      setLoading(true);
+    fetchProducts(true);
 
-      try {
-        const res = await axiosInstance.get("/products");
+    const interval = setInterval(() => {
+      fetchProducts(false);
+    }, 1000);
 
-        const productList = res.data.products || res.data.data || res.data;
-
-        setProducts(Array.isArray(productList) ? productList : []);
-      } catch (err) {
-        console.error(err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchedProducts();
+    return () => clearInterval(interval);
   }, []);
+  // useEffect(() => {
+  //   const fetchedProducts = async () => {
+  //     setLoading(true);
+
+  //     try {
+  //       const res = await axiosInstance.get("/products");
+
+  //       const productList = res.data.products || res.data.data || res.data;
+
+  //       setProducts(Array.isArray(productList) ? productList : []);
+  //     } catch (err) {
+  //       console.error(err);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
+
+  //   fetchedProducts();
+  // }, []);
 
   const subTotal = useMemo(() => {
     return cartItems.reduce((acc, item) => {
@@ -168,6 +194,7 @@ export const AppProvider = ({ children }) => {
 
         products,
         setProducts,
+        fetchProducts,
 
         subTotal,
 
