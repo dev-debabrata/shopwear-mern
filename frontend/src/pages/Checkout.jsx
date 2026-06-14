@@ -12,6 +12,7 @@ import { deliveryFields } from "../data/checkoutData";
 import { useNavigate } from "react-router-dom";
 import { createRazorpayOrder } from "../services/paymentService";
 import { createOrder } from "../services/orderService";
+import Address from "../components/Address";
 
 
 
@@ -251,7 +252,9 @@ const Checkout = () => {
           <div className="my-3 text-xl sm:text-2xl">
             <Title text1="DELIVERY" text2="INFORMATION" />
           </div>
-          <div className="flex gap-3 w-full flex-wrap">
+
+          <Address formData={formData} setFormData={setFormData} />
+          {/* <div className="flex gap-3 w-full flex-wrap">
             {deliveryFields.map((deliveryField) => (
               <Input
                 key={deliveryField.fieldName}
@@ -273,7 +276,7 @@ const Checkout = () => {
                 }
               />
             ))}
-          </div>
+          </div> */}
         </div>
         <div className="mt-8">
           <div className="min-w-70 mt-8">

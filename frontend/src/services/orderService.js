@@ -10,7 +10,7 @@ export const getMyOrders = async () => {
     return res.data;
 };
 
-export const getAllOrders = async () => {
-    const res = await axiosInstance.get("/orders/admin/all");
-    return res.data;
-};
+// export const getAllOrders = async () => {
+//     const res = await axiosInstance.get("/orders/admin/all");
+//     return res.data;
+// };

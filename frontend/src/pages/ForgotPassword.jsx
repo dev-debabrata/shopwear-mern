@@ -40,7 +40,7 @@ const ForgotPassword = () => {
       <div className="py-17">
         <form
           onSubmit={submitForm}
-          className="flex flex-col rounded-lg py-7.5 px-4 mb-12 gap-4 max-w-[39rem] mx-auto border"
+          className="flex flex-col rounded-lg py-7.5 px-4 mb-12 gap-4 max-w-120 mx-auto border"
         >
           <h1 className="text-4xl font-medium text-center mb-6">
             Recover Password
@@ -56,12 +56,27 @@ const ForgotPassword = () => {
             inputClassName="py-2 px-4 placeholder:text-amber-300"
             required
           />
-          <Button loading={isLoading} buttonType="submit" size="large">
+
+          <div className="flex justify-center">
+            <Button
+              loading={isLoading}
+              disabled={isLoading}
+              type="primary"
+              className=" font-light"
+              buttonType="submit"
+              size="small"
+            >
+              {isLoading ? "Sending..." : "SEND"}
+            </Button>
+          </div>
+
+
+          {/* <Button loading={isLoading} buttonType="submit" size="large">
             {isLoading ? "Sending..." : "SEND"}
-          </Button>
+          </Button> */}
         </form>
         {message && (
-          <p className="mt-4 text-center text-sm text-gray-700">{message}</p>
+          <p className="mt-4 text-center text-sm text-red-500">{message}</p>
         )}
       </div>
     </Container>
