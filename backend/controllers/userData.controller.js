@@ -32,6 +32,11 @@ const formatWishlistItems = (wishlistItems = []) => {
     }));
 };
 
+
+
+
+
+
 export const getUserData = async (req, res) => {
   try {
     const userId = getUserId(req);
@@ -57,6 +62,11 @@ export const getUserData = async (req, res) => {
     res.status(500).json({ success: false, message: error.message });
   }
 };
+
+
+
+
+
 
 export const addToWishlist = async (req, res) => {
   try {
@@ -100,6 +110,11 @@ export const addToWishlist = async (req, res) => {
   }
 };
 
+
+
+
+
+
 export const removeFromWishlist = async (req, res) => {
   try {
     const userId = getUserId(req);
@@ -137,6 +152,10 @@ export const removeFromWishlist = async (req, res) => {
     res.status(500).json({ success: false, message: error.message });
   }
 };
+
+
+
+
 
 export const addToCart = async (req, res) => {
   try {
@@ -186,6 +205,11 @@ export const addToCart = async (req, res) => {
   }
 };
 
+
+
+
+
+
 export const removeFromCart = async (req, res) => {
   try {
     const userId = getUserId(req);
@@ -224,6 +248,10 @@ export const removeFromCart = async (req, res) => {
     res.status(500).json({ success: false, message: error.message });
   }
 };
+
+
+
+
 
 export const updateCartQuantity = async (req, res) => {
   try {
@@ -280,6 +308,9 @@ export const updateCartQuantity = async (req, res) => {
     res.status(500).json({ success: false, message: error.message });
   }
 };
+
+
+
 
 export const clearCart = async (req, res) => {
   try {

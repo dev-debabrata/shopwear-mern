@@ -4,9 +4,19 @@ import jwt from "jsonwebtoken";
 import User from "../models/user.model.js";
 import { sendResetPasswordMail } from "../utils/sendMail.js";
 
+
+
+
+
+
 const generateToken = (userId, expiresIn = "7d") => {
   return jwt.sign({ id: userId }, process.env.JWT_SECRET, { expiresIn });
 };
+
+
+
+
+
 
 export const signupUser = async (req, res) => {
   try {
@@ -54,6 +64,9 @@ export const signupUser = async (req, res) => {
 };
 
 
+
+
+
 export const loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -90,17 +103,29 @@ export const loginUser = async (req, res) => {
   }
 };
 
+
+
+
+
 export const logoutUser = async (req, res) => {
   res.status(200).json({
     message: "Logout successful",
   });
 };
 
+
+
+
+
 export const getProfile = async (req, res) => {
   res.status(200).json({
     user: req.user,
   });
 };
+
+
+
+
 
 export const forgotPassword = async (req, res) => {
   try {
@@ -130,6 +155,10 @@ export const forgotPassword = async (req, res) => {
     res.status(500).json({ message: "Server error", error: error.message });
   }
 };
+
+
+
+
 
 
 export const resetPassword = async (req, res) => {
