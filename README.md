@@ -182,7 +182,7 @@ Through this project, I gained practical experience in:
 
 ## 👨‍💻 Developer
 
-Debabrata Das
+**Debabrata Das**
 
 B.Tech – Computer Science & Engineering
 
