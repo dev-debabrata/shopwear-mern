@@ -109,7 +109,8 @@ ShopWear/
 
 - git clone https://github.com/your-username/shopwear-mern-ecommerce.git
 - cd shopwear-mern-ecommerce
-- Backend Setup
+
+### Backend Setup
 
 ```
 cd backend
@@ -117,7 +118,7 @@ npm install
 npm run dev
 ```
 
-- Frontend Setup
+### Frontend Setup
 
 ```
 cd frontend
@@ -125,7 +126,7 @@ npm install
 npm run dev
 ```
 
-- Admin Setup
+### Admin Setup
 
 ```
 cd admin
@@ -143,7 +144,7 @@ npm run dev
 
 ---
 
-### ☁️ Cloudinary Integration
+## ☁️ Cloudinary Integration
 
 The application uses Cloudinary and Multer for:
 
@@ -181,13 +182,13 @@ Through this project, I gained practical experience in:
 
 ## 👨‍💻 Developer
 
-- Debabrata Das
+Debabrata Das
 
-- B.Tech – Computer Science & Engineering
+B.Tech – Computer Science & Engineering
 
-- Frontend Developer | MERN Stack Developer
+Frontend Developer | MERN Stack Developer
 
-- GitHub: https://github.com/dev-debabrata
+GitHub: https://github.com/dev-debabrata
 
 ---
 
@@ -200,11 +201,3 @@ This project was developed as a Final Year College Project to demonstrate practi
 ## 📄 License
 
 This project is developed for educational and academic purposes.
-
-### Recommended Repository Name
-
-**shopwear-mern-ecommerce**
-
-### Recommended About Section
-
-\*\*🛍️ Final Year College Project — A full-stack MERN E-Commerce platform with React, Node.js, Express, MongoDB,
