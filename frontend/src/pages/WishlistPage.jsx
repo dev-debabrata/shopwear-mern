@@ -14,8 +14,8 @@ const WishlistPage = () => {
     products
   } = useAppContext();
 
-
-  const wishlist = wishlistItems || [];
+  const wishlist = [...(wishlistItems || [])].reverse();
+  // const wishlist = wishlistItems || [];
 
   const removeFromWishlist = async (e, item) => {
     e.preventDefault();
