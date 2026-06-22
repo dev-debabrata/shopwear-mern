@@ -17,7 +17,7 @@ To develop a modern and scalable e-commerce platform that enables customers to b
 
 ## 📸 Screenshots
 
-### Login Page, SignUp Page & Forgot Password Page
+### Login Page, SignUp Page, Forgot Password Page & Profile Page
 
 <p align="center">
   <img src="./frontend/public/readme-img/login.png" alt="Login Page" width="45%" />
@@ -48,7 +48,7 @@ To develop a modern and scalable e-commerce platform that enables customers to b
 
 <p align="center">
   <img src="./frontend/public/readme-img/razorpay.png" alt="Razorpay Payment Page" width="45%" />
-  <img src="./frontend/public/readme-img/successOrder.png" alt="Order Success Page" width="45%" />
+  <img src="./frontend/public/readme-img/orderSuccess.png" alt="Order Success Page" width="45%" />
   <img src="./frontend/public/readme-img/order.png" alt="Order History Page" width="45%" />
   <img src="./frontend/public/readme-img/trackOrder.png" alt="Tracking Order Page" width="45%" />
 </p>
@@ -56,11 +56,11 @@ To develop a modern and scalable e-commerce platform that enables customers to b
 ### Admin Dashboard, Admin Product List Page, Admin Add Product Page, Admin Edit Product Page & Admin All Order List Page
 
 <p align="center">
-  <img src="./screenshots/admin-dashboard.png" alt="Admin Dashboard" width="70%" />
-  <img src="./frontend/public/readme-img/adminProduct.png" alt="Admin Product List" width="70%" />
-  <img src="./frontend/public/readme-img/addProduct.png" alt="Admin Add Product" width="70%" />
-  <img src="./frontend/public/readme-img/productEdit.png" alt="Admin Edit Product" width="70%" />
-  <img src="./frontend/public/readme-img/adminOrders.png" alt="Admin Order List" width="70%" />
+  <img src="./screenshots/admin-dashboard.png" alt="Admin Dashboard" width="45%" />
+  <img src="./frontend/public/readme-img/adminProduct.png" alt="Admin Product List" width="45%" />
+  <img src="./frontend/public/readme-img/addProduct.png" alt="Admin Add Product" width="45%" />
+  <img src="./frontend/public/readme-img/productEdit.png" alt="Admin Edit Product" width="45%" />
+  <img src="./frontend/public/readme-img/adminOrders.png" alt="Admin Order List" width="45%" />
 </p>
 
 ---
