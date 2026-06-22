@@ -17,25 +17,33 @@ To develop a modern and scalable e-commerce platform that enables customers to b
 
 ## 📸 Screenshots
 
-### Home Page
+### Login Page & SignUp Page
 
-![Home Page](./screenshots/home.png)
+<p align="center">
+  <img src="./frontend/public/readme-img/login.png" alt="Login Page" width="45%" />
+  <img src="./frontend/public/readme-img/signup.png" alt="SignUp Page" width="45%" />
+  <img src="./frontend/public/readme-img/forgotPassword.png" alt="Forgot Password Page" width="45%" />
+</p>
 
-### Collections Page
+### Home Page & Collections Page
 
-![Collections Page](./screenshots/collections.png)
+<p align="center">
+  <img src="./frontend/public/readme-img/home.png" alt="Home Page" width="45%" />
+  <img src="./frontend/public/readme-img/collection.png" alt="Collection Page" width="45%" />
+</p>
 
-### Product Details Page
+### Product Details & Shopping Cart
 
-![Product Details](./screenshots/product-details.png)
-
-### Shopping Cart
-
-![Shopping Cart](./screenshots/cart.png)
+<p align="center">
+  <img src="./frontend/public/readme-img/product.png" alt="Product Details" width="45%" />
+  <img src="./frontend/public/readme-img/cart.png" alt="Shopping Cart" width="45%" />
+</p>
 
 ### Admin Dashboard
 
-![Admin Dashboard](./screenshots/admin-dashboard.png)
+<p align="center">
+  <img src="./screenshots/admin-dashboard.png" alt="Admin Dashboard" width="70%" />
+</p>
 
 ---
 

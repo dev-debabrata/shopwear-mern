@@ -51,7 +51,8 @@ const ForgotPassword = () => {
           className="flex flex-col rounded-lg py-7.5 px-4 mb-12 gap-4 max-w-120 mx-auto border"
         >
           <h1 className="text-4xl font-medium text-center mb-6">
-            Recover Password
+            {/* Recover Password */}
+            Forgot Password
           </h1>
           <label className="text-center font-bold" htmlFor="">
             Email address
