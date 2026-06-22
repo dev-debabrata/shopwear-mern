@@ -11,7 +11,7 @@ const BestSeller = () => {
     return [...products]
       .filter((item) => item.bestSeller)
       .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
-      .slice(0, 6);
+      .slice(0, 10);
   }, [products]);
 
   // const bestSeller = products.filter((item) => item.bestSeller).slice(0, 6);
